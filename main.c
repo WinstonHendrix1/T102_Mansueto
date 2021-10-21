@@ -1,20 +1,26 @@
-//Mansueto Mi2Act2
 #include <stdio.h>
 
-int main()
-{
-    int num1;
-    int num2;
-    int num3;
-    int result;
-    printf("input first number");
-    scanf("%d", &num1);
-    printf("input second number");
-    scanf("%d", &num2);
-    printf("inpute third number");
-    scanf("%d", &num3);
-    
-    result = num1 / num2 * num3;
-    printf("\n%d RPM devide %d secs Multiply to %d is equal to %d Degrees per second", num1, num2, num3, result);
+int main(){
+    int temp;
+    printf("Please put temprature");
+    scanf("%d" , &temp);
+    if(temp < 0){
+        printf("the weather is freezing");
+}
+    else if(temp >= 0 && temp <= 10 ){
+            printf("the weather is very cold");
+}
+    else if(temp >= 10 && temp <= 20){
+            printf("the weather is cold");
+}
+    else if(temp >= 20 && temp <= 30){
+            printf("the weather is normal");
+}
+    else if(temp >= 30 && temp <= 40){
+        printf("the weather is hot");
+}
+    else if(temp >= 40){
+            printf("the weather is very hot");
+}
     return 0;
-    }
+}
